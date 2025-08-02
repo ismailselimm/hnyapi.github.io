@@ -257,12 +257,10 @@
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0 d-flex align-items-center justify-content-center bg-white">
-                    <img src="img/hakkinda.png" 
-                         class="img-fluid"
-                         style="width: 100%; max-height: 400px; object-fit: contain;" 
-                         alt="kartvizit">
-                  </div>
-                  
+                    <img src="img/hakkinda.png" class="img-fluid"
+                        style="width: 100%; max-height: 400px; object-fit: contain;" alt="kartvizit">
+                </div>
+
                 <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <div class="section-title text-start">
@@ -509,30 +507,33 @@
                 <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/lapseki/1.png" alt="Lapseki Projesi">
+                            <!-- Kapak görseli -->
+                            <img class="img-fluid w-100" src="img/lapseki/1.png" alt="Lapseki Konut Projesi">
+
+                            <!-- Hover olduğunda görünen galeri -->
                             <div class="portfolio-overlay">
 
-                                <!-- Göz ikonuna tıklanınca galeri açılır (başlangıç resmi) -->
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/lapseki/1.png"
-                                    data-lightbox="lapseki">
+                                <!-- Göz ikonuna tıklanınca galeri açılır -->
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox" href="img/lapseki/1.png"
+                                    data-gallery="lapseki">
                                     <i class="fa fa-eye"></i>
                                 </a>
 
-                                <!-- Galerideki diğer 14 resim -->
-                                <a class="d-none" href="img/lapseki/2.png" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/3.png" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/4.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/5.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/6.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/7.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/8.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/9.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/10.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/11.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/12.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/13.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/14.jpeg" data-lightbox="lapseki"></a>
-                                <a class="d-none" href="img/lapseki/15.jpeg" data-lightbox="lapseki"></a>
+                                <!-- Diğer 14 görsel gizli olarak galeriye dahil edilir -->
+                                <a class="d-none glightbox" href="img/lapseki/2.png" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/3.png" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/4.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/5.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/6.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/7.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/8.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/9.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/10.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/11.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/12.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/13.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/14.jpeg" data-gallery="lapseki"></a>
+                                <a class="d-none glightbox" href="img/lapseki/15.jpeg" data-gallery="lapseki"></a>
 
                             </div>
                         </div>
@@ -542,6 +543,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <!-- TREN -->
                 <div class="col-lg-4 col-md-6 portfolio-item devam wow fadeInUp" data-wow-delay="0.3s">
@@ -579,32 +581,44 @@
                     </div>
                 </div>
 
-                 <!-- BİZİMEVLER11 -->
+                <!-- BİZİMEVLER11 -->
                 <div class="col-lg-4 col-md-6 portfolio-item devam wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <!-- Ana kapak resmi -->
                             <img class="img-fluid w-100" src="img/bizimevler11/1.jpg" alt="Bizim Evler 11">
                             <div class="portfolio-overlay">
-                
+
                                 <!-- Göz ikonu: galeri açılır -->
-                                <a class="btn btn-square btn-outline-light mx-1 glightbox" href="img/bizimevler11/1.jpg" data-gallery="bizimevler11">
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox" href="img/bizimevler11/1.jpg"
+                                    data-gallery="bizimevler11">
                                     <i class="fa fa-eye"></i>
                                 </a>
-                
+
                                 <!-- Galerideki diğer resimler (gizli) -->
-                                <a class="d-none glightbox" href="img/bizimevler11/2.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/3.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/4.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/5.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/6.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/7.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/8.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/9.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/10.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/11.jpg" data-gallery="bizimevler11"></a>
-                                <a class="d-none glightbox" href="img/bizimevler11/12.jpg" data-gallery="bizimevler11"></a>
-                
+                                <a class="d-none glightbox" href="img/bizimevler11/2.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/3.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/4.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/5.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/6.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/7.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/8.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/9.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/10.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/11.jpg"
+                                    data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/12.jpg"
+                                    data-gallery="bizimevler11"></a>
+
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
@@ -613,27 +627,27 @@
                         </div>
                     </div>
                 </div>
-                
 
-                <!-- ÇANAKKALEKEPEZ -->
+
+                <!-- ÇANAKKALE KEPEZ -->
                 <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/canakkalekepez/4.jpeg" alt="Çanakkale Kepez Projesi">
                             <div class="portfolio-overlay">
 
-                                <!-- Galeri açılış butonu -->
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/canakkalekepez/4.jpeg"
-                                    data-lightbox="canakkalekepez">
+                                <!-- Göz ikonuna tıklanınca galeri açılır -->
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox"
+                                    href="img/canakkalekepez/4.jpeg" data-gallery="kepez">
                                     <i class="fa fa-eye"></i>
                                 </a>
 
-                                <!-- Galerideki diğer 7 görsel -->
-                                <a class="d-none" href="img/canakkalekepez/3.jpeg" data-lightbox="canakkalekepez"></a>
-                                <a class="d-none" href="img/canakkalekepez/5.jpeg" data-lightbox="canakkalekepez"></a>
-                                <a class="d-none" href="img/canakkalekepez/6.jpeg" data-lightbox="canakkalekepez"></a>
-                                <a class="d-none" href="img/canakkalekepez/7.jpeg" data-lightbox="canakkalekepez"></a>
-                                <a class="d-none" href="img/canakkalekepez/8.jpeg" data-lightbox="canakkalekepez"></a>
+                                <!-- Diğer görseller gizli olarak galeriye eklenir -->
+                                <a class="d-none glightbox" href="img/canakkalekepez/3.jpeg" data-gallery="kepez"></a>
+                                <a class="d-none glightbox" href="img/canakkalekepez/5.jpeg" data-gallery="kepez"></a>
+                                <a class="d-none glightbox" href="img/canakkalekepez/6.jpeg" data-gallery="kepez"></a>
+                                <a class="d-none glightbox" href="img/canakkalekepez/7.jpeg" data-gallery="kepez"></a>
+                                <a class="d-none glightbox" href="img/canakkalekepez/8.jpeg" data-gallery="kepez"></a>
 
                             </div>
                         </div>
@@ -644,6 +658,7 @@
                     </div>
                 </div>
 
+
                 <!-- İHLAS MARMARA EVLERİ -->
                 <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
@@ -651,17 +666,17 @@
                             <img class="img-fluid w-100" src="img/ihlasmarmaraev/ihlas1.jpg" alt="İhlas Marmara Evleri">
                             <div class="portfolio-overlay">
 
-                                <!-- Galeriyi açan ikon -->
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/ihlasmarmaraev/ihlas1.jpg"
-                                    data-lightbox="ihlasmarmaraev">
+                                <!-- Galeri açma ikonu -->
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox"
+                                    href="img/ihlasmarmaraev/ihlas1.jpg" data-gallery="ihlas">
                                     <i class="fa fa-eye"></i>
                                 </a>
 
-                                <!-- Diğer görseller (gizli ama galeride) -->
-                                <a class="d-none" href="img/ihlasmarmaraev/ihlas2.jpg"
-                                    data-lightbox="ihlasmarmaraev"></a>
-                                <a class="d-none" href="img/ihlasmarmaraev/ihlas3.jpg"
-                                    data-lightbox="ihlasmarmaraev"></a>
+                                <!-- Galerideki diğer görseller (gizli) -->
+                                <a class="d-none glightbox" href="img/ihlasmarmaraev/ihlas2.jpg"
+                                    data-gallery="ihlas"></a>
+                                <a class="d-none glightbox" href="img/ihlasmarmaraev/ihlas3.jpg"
+                                    data-gallery="ihlas"></a>
 
                             </div>
                         </div>
@@ -672,6 +687,7 @@
                     </div>
                 </div>
 
+
                 <!-- EBRAR VİLLA YAPI -->
                 <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
@@ -679,9 +695,9 @@
                             <img class="img-fluid w-100" src="img/ebrarvillayapi/1.png" alt="Ebrar Villa Yapı">
                             <div class="portfolio-overlay">
 
-                                <!-- Galeri butonu (tek resim ama future-proof) -->
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/ebrarvillayapi/1.png"
-                                    data-lightbox="ebrarvillayapi">
+                                <!-- Glightbox galeri butonu -->
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox"
+                                    href="img/ebrarvillayapi/1.png" data-gallery="ebrar">
                                     <i class="fa fa-eye"></i>
                                 </a>
 
@@ -693,6 +709,7 @@
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -718,34 +735,38 @@
                         </div>
                         <p class="mb-4 pb-2">İnşaat ve yapı projeleriniz için bizimle iletişime geçin. Ekibimiz en kısa
                             sürede dönüş sağlayacaktır.</p>
-                            <form action="https://formspree.io/f/xyzpdpkw" method="POST">
-                                <div class="row g-3">
-                                  <div class="col-12 col-sm-6">
-                                    <input name="name" type="text" class="form-control border-0" placeholder="Adınız Soyadınız" required style="height: 55px;">
-                                  </div>
-                                  <div class="col-12 col-sm-6">
-                                    <input name="email" type="email" class="form-control border-0" placeholder="E-Posta Adresiniz" required style="height: 55px;">
-                                  </div>
-                                  <div class="col-12 col-sm-6">
-                                    <input name="phone" type="text" class="form-control border-0" placeholder="Telefon Numaranız" required style="height: 55px;">
-                                  </div>
-                                  <div class="col-12 col-sm-6">
-                                    <select name="service" class="form-select border-0" style="height: 55px;">
-                                      <option selected>Hizmet Seçiniz</option>
-                                      <option value="Anahtar Teslim İnşaat">Anahtar Teslim İnşaat</option>
-                                      <option value="Taahhüt">Taahhüt</option>
-                                      <option value="Danışmanlık">Danışmanlık</option>
-                                    </select>
-                                  </div>
-                                  <div class="col-12">
-                                    <textarea name="note" class="form-control border-0" placeholder="Notunuz (isteğe bağlı)"></textarea>
-                                  </div>
-                                  <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Gönder</button>
-                                  </div>
+                        <form action="https://formspree.io/f/xyzpdpkw" method="POST">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input name="name" type="text" class="form-control border-0"
+                                        placeholder="Adınız Soyadınız" required style="height: 55px;">
                                 </div>
-                              </form>
-                              
+                                <div class="col-12 col-sm-6">
+                                    <input name="email" type="email" class="form-control border-0"
+                                        placeholder="E-Posta Adresiniz" required style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input name="phone" type="text" class="form-control border-0"
+                                        placeholder="Telefon Numaranız" required style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select name="service" class="form-select border-0" style="height: 55px;">
+                                        <option selected>Hizmet Seçiniz</option>
+                                        <option value="Anahtar Teslim İnşaat">Anahtar Teslim İnşaat</option>
+                                        <option value="Taahhüt">Taahhüt</option>
+                                        <option value="Danışmanlık">Danışmanlık</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="note" class="form-control border-0"
+                                        placeholder="Notunuz (isteğe bağlı)"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Gönder</button>
+                                </div>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
