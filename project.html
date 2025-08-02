@@ -35,6 +35,17 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Lightbox2 CSS ve JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- GLightbox CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
+
 </head>
 
 
@@ -140,106 +151,196 @@
 
             <!-- Projeler -->
             <div class="row g-4 portfolio-container">
+
+                <!-- LAPSEKİ -->
                 <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/lapseki/1.png" alt="Lapseki Projesi">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
+
+                                <!-- Göz ikonuna tıklanınca galeri açılır (başlangıç resmi) -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/lapseki/1.png"
+                                    data-lightbox="lapseki">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+
+                                <!-- Galerideki diğer 14 resim -->
+                                <a class="d-none" href="img/lapseki/2.png" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/3.png" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/4.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/5.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/6.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/7.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/8.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/9.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/10.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/11.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/12.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/13.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/14.jpeg" data-lightbox="lapseki"></a>
+                                <a class="d-none" href="img/lapseki/15.jpeg" data-lightbox="lapseki"></a>
+
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <p class="text-primary fw-medium mb-2">Tamamlanmış Proje</p>
-                            <h5 class="lh-base mb-0">İstanbul Beylikdüzü Konut Projesi</h5>
+                            <h5 class="lh-base mb-0">Lapseki Konut Projesi (2016-2017)</h5>
                         </div>
                     </div>
                 </div>
 
+                <!-- TREN -->
                 <div class="col-lg-4 col-md-6 portfolio-item devam wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/hizlitren/1.png" alt="Hızlı Tren Projesi">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
+
+                                <!-- Göz ikonu: galeri açılır -->
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox" href="img/hizlitren/1.png"
+                                    data-gallery="tren">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+
+                                <!-- Galerideki diğer resim -->
+                                <a class="d-none glightbox" href="img/hizlitren/2.png" data-gallery="tren"></a>
+
+                                <!-- YouTube video -->
+                                <a class="d-none glightbox" href="https://www.youtube.com/watch?v=Emk-FXJ7nDQ"
+                                    data-type="video" data-gallery="tren">
+                                </a>
+
+                                <!-- Tek PDF ikon: ayrı belge sayfasına yönlendir -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="belgeler/hizlitren.html"
+                                    target="_blank">
+                                    <i class="fa fa-file-pdf"></i>
+                                </a>
+
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <p class="text-primary fw-medium mb-2">Devam Eden Proje</p>
-                            <h5 class="lh-base mb-0">Ankara Toplu Konut İnşaatı</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item lansman wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Lansman Proje</p>
-                            <h5 class="lh-base mb-0">İzmir Modern Yaşam Konutları</h5>
+                            <h5 class="lh-base mb-0">Hızlı Tren Projesi</h5>
                         </div>
                     </div>
                 </div>
 
+                 <!-- BİZİMEVLER11 -->
+                <div class="col-lg-4 col-md-6 portfolio-item devam wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <!-- Ana kapak resmi -->
+                            <img class="img-fluid w-100" src="img/bizimevler11/1.jpg" alt="Bizim Evler 11">
+                            <div class="portfolio-overlay">
+                
+                                <!-- Göz ikonu: galeri açılır -->
+                                <a class="btn btn-square btn-outline-light mx-1 glightbox" href="img/bizimevler11/1.jpg" data-gallery="bizimevler11">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                
+                                <!-- Galerideki diğer resimler (gizli) -->
+                                <a class="d-none glightbox" href="img/bizimevler11/2.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/3.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/4.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/5.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/6.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/7.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/8.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/9.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/10.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/11.jpg" data-gallery="bizimevler11"></a>
+                                <a class="d-none glightbox" href="img/bizimevler11/12.jpg" data-gallery="bizimevler11"></a>
+                
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Devam Eden Proje</p>
+                            <h5 class="lh-base mb-0">Bizim Evler 11 Projesi</h5>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- ÇANAKKALEKEPEZ -->
                 <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/canakkalekepez/4.jpeg" alt="Çanakkale Kepez Projesi">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
+
+                                <!-- Galeri açılış butonu -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/canakkalekepez/4.jpeg"
+                                    data-lightbox="canakkalekepez">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+
+                                <!-- Galerideki diğer 7 görsel -->
+                                <a class="d-none" href="img/canakkalekepez/3.jpeg" data-lightbox="canakkalekepez"></a>
+                                <a class="d-none" href="img/canakkalekepez/5.jpeg" data-lightbox="canakkalekepez"></a>
+                                <a class="d-none" href="img/canakkalekepez/6.jpeg" data-lightbox="canakkalekepez"></a>
+                                <a class="d-none" href="img/canakkalekepez/7.jpeg" data-lightbox="canakkalekepez"></a>
+                                <a class="d-none" href="img/canakkalekepez/8.jpeg" data-lightbox="canakkalekepez"></a>
+
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
                             <p class="text-primary fw-medium mb-2">Tamamlanmış Proje</p>
-                            <h5 class="lh-base mb-0">Çekmeköy Villa İnşaatı</h5>
+                            <h5 class="lh-base mb-0">Çanakkale Kepez Konut Projesi <br>(2013-2014)</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item devam wow fadeInUp" data-wow-delay="0.3s">
+                <!-- İHLAS MARMARA EVLERİ -->
+                <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/ihlasmarmaraev/ihlas1.jpg" alt="İhlas Marmara Evleri">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
+
+                                <!-- Galeriyi açan ikon -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/ihlasmarmaraev/ihlas1.jpg"
+                                    data-lightbox="ihlasmarmaraev">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+
+                                <!-- Diğer görseller (gizli ama galeride) -->
+                                <a class="d-none" href="img/ihlasmarmaraev/ihlas2.jpg"
+                                    data-lightbox="ihlasmarmaraev"></a>
+                                <a class="d-none" href="img/ihlasmarmaraev/ihlas3.jpg"
+                                    data-lightbox="ihlasmarmaraev"></a>
+
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Devam Eden Proje</p>
-                            <h5 class="lh-base mb-0">Bursa Site Projesi</h5>
+                            <p class="text-primary fw-medium mb-2">Tamamlanmış Proje</p>
+                            <h5 class="lh-base mb-0">İhlas Marmara Evleri (1994-1997)</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item lansman wow fadeInUp" data-wow-delay="0.5s">
+                <!-- EBRAR VİLLA YAPI -->
+                <div class="col-lg-4 col-md-6 portfolio-item tamamlandi wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/ebrarvillayapi/1.png" alt="Ebrar Villa Yapı">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg"
-                                    data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href="#"><i class="fa fa-link"></i></a>
+
+                                <!-- Galeri butonu (tek resim ama future-proof) -->
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/ebrarvillayapi/1.png"
+                                    data-lightbox="ebrarvillayapi">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+
                             </div>
                         </div>
                         <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Lansman Proje</p>
-                            <h5 class="lh-base mb-0">Ataşehir Premium Konutları</h5>
+                            <p class="text-primary fw-medium mb-2">Tamamlanmış Proje</p>
+                            <h5 class="lh-base mb-0">Ebrar Villa Yapı Projesi (2000)</h5>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -252,37 +353,39 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">İletişim</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Barbaros Mah. İzmir Cad. No: 807 Merkez / Çanakkale</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Barbaros Mah. İzmir Cad. No: 807 Merkez /
+                        Çanakkale</p>
                     <p class="mb-2">
                         <i class="fa fa-phone-alt me-3"></i>
                         +90 545 878 82 87<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+90 542 107 19 15
-                      </p>
-                                          <p class="mb-2"><i class="fa fa-envelope me-3"></i>emreuzan@gmail.com</p>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hnyapi23@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/hnyapi/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Hizmetlerimiz</h4>
-                    <a class="btn btn-link" href="#">Konut İnşaatı ve Satışı</a>
-                    <a class="btn btn-link" href="#">Kentsel Dönüşüm Hizmetleri</a>
-                    <a class="btn btn-link" href="#">Sıcak Asfalt Çalışmaları</a>
-                    <a class="btn btn-link" href="#">Alt Yapı Hizmetleri</a>
-                    <a class="btn btn-link" href="#">Toplu Konut Projeleri</a>
-                    <a class="btn btn-link" href="#">Otoyol ve Yol Hizmetleri</a>
+                    <a class="btn btn-link" href="service.html#konut">Konut İnşaatı ve Satışı</a>
+                    <a class="btn btn-link" href="service.html#kentsel-donusum">Kentsel Dönüşüm Hizmetleri</a>
+                    <a class="btn btn-link" href="service.html#asfalt">Sıcak Asfalt Çalışmaları</a>
+                    <a class="btn btn-link" href="service.html#altyapi">Alt Yapı Hizmetleri</a>
+                    <a class="btn btn-link" href="service.html#toplu-konut">Toplu Konut Projeleri</a>
+                    <a class="btn btn-link" href="service.html#otoyol">Otoyol ve Yol Hizmetleri</a>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Hızlı Erişim</h4>
-                    <a class="btn btn-link" href="#">Hakkımızda</a>
-                    <a class="btn btn-link" href="#">İletişim</a>
-                    <a class="btn btn-link" href="#">Projelerimiz</a>
-                    <a class="btn btn-link" href="#">Gizlilik Politikası</a>
-                    <a class="btn btn-link" href="#">Destek</a>
+                    <a class="btn btn-link" href="about.html">Hakkımızda</a>
+                    <a class="btn btn-link" href="contact.html">İletişim</a>
+                    <a class="btn btn-link" href="project.html">Projelerimiz</a>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Bülten</h4>
                     <p>Yeni projelerimizden ve kampanyalardan haberdar olmak için e-bültenimize abone olun.</p>
@@ -302,7 +405,9 @@
                         &copy; <a class="border-bottom" href="#">H & N YAPI</a>, Tüm Hakları Saklıdır.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        Tasarım: <a class="border-bottom" href="https://ismailselimgarip.com/" target="_blank">İsmail Selim Garip</a>
+                        Website Geliştirici: <a class="border-bottom" href="https://ismailselimgarip.com/"
+                            target="_blank">İsmail
+                            Selim Garip</a>
                     </div>
                 </div>
             </div>
@@ -328,6 +433,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({ selector: '.glightbox' });
+    </script>
+
+
+
 </body>
 
 </html>
