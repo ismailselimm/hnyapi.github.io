@@ -166,7 +166,6 @@
 
 
 
-
 /*** Header ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
@@ -594,7 +593,7 @@
 
 .testimonial-carousel .owl-nav {
     position: absolute;
-    width: 350px;
+    width: 500px;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -606,7 +605,7 @@
 }
 
 .testimonial-carousel:hover .owl-nav {
-    width: 300px;
+    width: 500px;
     opacity: 1;
 }
 
