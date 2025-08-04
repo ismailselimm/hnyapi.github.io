@@ -368,28 +368,33 @@
 
 
 /*** Feature ***/
-@media (min-width: 992px) {
-    .container.feature {
-        max-width: 100% !important;
-    }
-
+.container.feature {
+    max-width: 100% !important;
+  }
+  
+  .feature-text {
+    padding: 3rem 1rem; /* Mobil için varsayılan padding */
+  }
+  
+  @media (min-width: 992px) {
     .feature-text {
-        padding-left: calc(((100% - 960px) / 2) + .75rem);
+      padding-left: calc(((100% - 960px) / 2) + .75rem);
+      padding-right: 1rem;
     }
-}
-
-@media (min-width: 1200px) {
+  }
+  
+  @media (min-width: 1200px) {
     .feature-text {
-        padding-left: calc(((100% - 1140px) / 2) + .75rem);
+      padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
-}
-
-@media (min-width: 1400px) {
+  }
+  
+  @media (min-width: 1400px) {
     .feature-text {
-        padding-left: calc(((100% - 1320px) / 2) + .75rem);
+      padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
-}
-
+  }
+  
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
