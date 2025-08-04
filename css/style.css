@@ -109,24 +109,13 @@
     color: var(--primary) !important;
 }
 
-@media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
-    }
-}
-
 /* YÜKSEKLİK AYARI */
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
     height: 75px;
 }
 
-/* 4. BURADA RENGİ TEKRAR KARARTAN SATIRI KALDIRDIK (YA DA EZDİK) */
+/* RENGİ TEKRAR EZME */
 .navbar-light .navbar-nav .nav-link {
     color: #FFFFFF !important;
     font-weight: 500;
@@ -163,6 +152,38 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* 🔧 RESPONSIVE MOBİL DÜZENLEME */
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+        padding: 10px 0 !important;
+    }
+}
+
+/* 📱 MOBİL EKRANDA LOGO, NAV YÜKSEKLİĞİ, BOŞLUKLAR */
+@media (max-width: 576px) {
+    .navbar-light .navbar-brand img {
+        height: 45px !important;
+    }
+
+    .navbar-light .navbar-brand,
+    .navbar-light a.btn {
+        height: 60px !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        padding: 8px 0 !important;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+}
 
 
 
@@ -192,11 +213,18 @@
     }
 }
 
+.owl-carousel-item img {
+    height: 95vh;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+
 .header-carousel .owl-nav {
     position: absolute;
     width: 200px;
     height: 45px;
-    bottom: 30px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -226,7 +254,7 @@
 .header-carousel .owl-dots {
     position: absolute;
     height: 45px;
-    bottom: 30px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -593,7 +621,7 @@
 
 .testimonial-carousel .owl-nav {
     position: absolute;
-    width: 500px;
+    width: 400px;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
@@ -605,7 +633,7 @@
 }
 
 .testimonial-carousel:hover .owl-nav {
-    width: 500px;
+    width: 400px;
     opacity: 1;
 }
 
