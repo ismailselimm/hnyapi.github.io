@@ -1,73 +1,136 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
   <meta charset="UTF-8">
   <title>Hızlı Tren Projesi Belgeleri</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f0f0;
       margin: 0;
       padding: 40px 20px;
       color: #333;
     }
 
+    .back-btn {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .back-btn a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #c49b66;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .back-btn a:hover {
+      background-color: #a67c45;
+    }
+
+
     .container {
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
-      background-color: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+      padding: 50px 30px;
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
     h1 {
       text-align: center;
-      color: #333;
-      margin-bottom: 30px;
-      font-size: 28px;
-      letter-spacing: 1px;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #222;
+      border-bottom: 2px solid #c49b66;
+      padding-bottom: 10px;
+      text-transform: uppercase;
     }
 
     ul {
       list-style: none;
       padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
     }
 
-    li {
-      margin-bottom: 15px;
-    }
-
-    a {
+    li a {
       text-decoration: none;
-      color: #444;
-      background-color: #eaeaea;
-      padding: 12px 20px;
+      background: #fdfdfd;
+      border: 1px solid #ddd;
+      padding: 16px 20px;
       display: block;
-      border-radius: 6px;
-      transition: all 0.2s ease;
+      border-radius: 10px;
+      transition: all 0.3s ease;
       font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      color: #333;
     }
 
-    a:hover {
-      background-color: #d6d6d6;
+    li a:hover {
+      background: #fff5ea;
+      border-color: #c49b66;
       color: #000;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    li a::before {
+      content: "📄 ";
+      margin-right: 5px;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Hızlı Tren Projesi Belgeleri</h1>
     <ul>
-      <li><a href="../img/hizlitren/trenpdf/belge1.pdf" target="_blank">📄 Belge 1</a></li>
-      <li><a href="../img/hizlitren/trenpdf/belge2.pdf" target="_blank">📄 Belge 2</a></li>
-      <li><a href="../img/hizlitren/trenpdf/belge3.pdf" target="_blank">📄 Belge 3</a></li>
-      <li><a href="../img/hizlitren/trenpdf/belge4.pdf" target="_blank">📄 Belge 4</a></li>
-      <li><a href="../img/hizlitren/trenpdf/belge5.pdf" target="_blank">📄 Belge 5</a></li>
-      <li><a href="../img/hizlitren/trenpdf/belge6.pdf" target="_blank">📄 Belge 6</a></li>
-      <li><a href="../img/hizlitren/trenpdf/belge7.pdf" target="_blank">📄 Belge 7</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge1.pdf" target="_blank">Belge 1</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge2.pdf" target="_blank">Belge 2</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge3.pdf" target="_blank">Belge 3</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge4.pdf" target="_blank">Belge 4</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge5.pdf" target="_blank">Belge 5</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge6.pdf" target="_blank">Belge 6</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge7.pdf" target="_blank">Belge 7</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge8.pdf" target="_blank">Belge 8</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge9.pdf" target="_blank">Belge 9</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge10.pdf" target="_blank">Belge 10</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge11.pdf" target="_blank">Belge 11</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge12.pdf" target="_blank">Belge 12</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge13.pdf" target="_blank">Belge 13</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge14.pdf" target="_blank">Belge 14</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge15.pdf" target="_blank">Belge 15</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge16.pdf" target="_blank">Belge 16</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge17.pdf" target="_blank">Belge 17</a></li>
+      <li><a href="../img/hizlitren/trenpdf/belge18.pdf" target="_blank">Belge 18</a></li>
     </ul>
   </div>
+
+  <div class="back-btn">
+    <a href="../index.html">← Anasayfaya Dön</a>
+  </div>
+
+
 </body>
+
 </html>

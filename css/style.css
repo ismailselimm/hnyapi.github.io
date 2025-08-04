@@ -193,7 +193,7 @@
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
@@ -217,8 +217,8 @@
     height: 95vh;
     object-fit: cover;
     width: 100%;
-  }
-  
+}
+
 
 .header-carousel .owl-nav {
     position: absolute;
@@ -294,7 +294,7 @@
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -339,19 +339,19 @@
         max-width: 100% !important;
     }
 
-    .about-text  {
+    .about-text {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .about-text  {
+    .about-text {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .about-text  {
+    .about-text {
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -373,19 +373,19 @@
         max-width: 100% !important;
     }
 
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .feature-text  {
+    .feature-text {
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -518,19 +518,19 @@
         max-width: 100% !important;
     }
 
-    .quote-text  {
+    .quote-text {
         padding-right: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .quote-text  {
+    .quote-text {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .quote-text  {
+    .quote-text {
         padding-right: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -596,6 +596,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -603,6 +604,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -657,19 +659,19 @@
         max-width: 100% !important;
     }
 
-    .contact-text  {
+    .contact-text {
         padding-left: calc(((100% - 960px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1200px) {
-    .contact-text  {
+    .contact-text {
         padding-left: calc(((100% - 1140px) / 2) + .75rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .contact-text  {
+    .contact-text {
         padding-left: calc(((100% - 1320px) / 2) + .75rem);
     }
 }
@@ -740,9 +742,43 @@
 /* Tüm section başlıklarının altındaki çizgiyi kaldırır */
 .section-title::after {
     display: none !important;
+}
+
+.section-title h1::before,
+.section-title h1::after {
+    display: none !important;
+}
+
+.floating-socials {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
   }
   
-  .section-title h1::before,
-  .section-title h1::after {
-      display: none !important;
+  .floating-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    color: white;
+    background-color: #2c2928;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
   }
+  
+  .floating-socials a:hover {
+    transform: scale(1.1);
+    background-color: var(--primary);
+  }
+  
+  .floating-socials a .fa-whatsapp { color: #25D366; }
+  .floating-socials a .fa-telegram-plane { color: #0088cc; }
+  .floating-socials a .fa-instagram { color: #E1306C; }
+  
